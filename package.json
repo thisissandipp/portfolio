@@ -45,5 +45,6 @@
   },
   "homepage": "https://github.com/thecodexhub/portfolio#readme",
   "author": "Sandip Pramanik <thecodexhubofficial@gmail.com>",
+  "license": "MIT",
   "private": true
 }
