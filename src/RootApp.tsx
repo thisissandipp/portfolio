@@ -1,9 +1,15 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./router/AppRouter";
 
 export default function RootApp(): React.ReactElement {
 	return (
 		<StrictMode>
-			<h1 className="text-3xl font-bold underline text-blue-800">Hello world!</h1>
+			<BrowserRouter>
+				<Suspense fallback={<div>Loading...</div>}>
+					<AppRouter />
+				</Suspense>
+			</BrowserRouter>
 		</StrictMode>
 	);
 }
