@@ -80,7 +80,7 @@ const socials = [
 export default function Footer(): React.ReactElement {
 	return (
 		<div className="bg-gray-100">
-			<footer className="absolute inset-x-0 bottom-0 z-50">
+			<footer className="inset-x-0 bottom-0 z-50">
 				<div className="flex-row lg:flex items-center justify-center lg:justify-between p-6 lg:px-8">
 					<span className=" flex text-sm leading-6 text-gray-900 justify-center">
 						&copy; {currentYear} Sandip Pramanik. All Rights Reserved.
