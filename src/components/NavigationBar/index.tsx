@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const navigation = [
 	{ name: "About Me", href: "/about" },
 	{ name: "Blogs and Articles", href: "/blogs" },
-	{ name: "Project Showcase", href: "/projects" },
-	{ name: "Resume", href: "/resume" },
+	// { name: "Project Showcase", href: "/projects" },
+	// { name: "Resume", href: "/resume" },
 ];
 
 const portfolioLink = "https://github.com/thecodexhub/portfolio";
