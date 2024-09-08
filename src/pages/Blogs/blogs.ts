@@ -1,6 +1,21 @@
 export const blogs = [
   {
 		id: 14,
+		title: "Environment Variables in Flutter Apps",
+		href: "https://medium.com/stackademic/environment-variables-in-flutter-apps-db3d07999731",
+		description: "Secure and simplify your flutter app configuration with best practices and advanced tools.",
+		date: "Aug 24, 2024",
+		datetime: "2024-08-24",
+		channel: { name: "Medium", href: "https://medium.com/@thecodexhub" },
+		author: {
+			name: "Sandip Pramanik",
+			publisher: "Stackademic",
+			href: "https://blog.stackademic.com/",
+			imageUrl: "./icon-512x512.png",
+		},
+  },
+  {
+		id: 14,
 		title: "Introducing Xarvis CLI: Generate Production Ready Starter Template",
 		href: "https://blog.stackademic.com/introducing-xarvis-cli-generate-production-ready-starter-template-a996da4c49c3",
 		description: "Xarvis CLI is a powerful command-line interface tool that allows developers to easily generate production-ready starter templates for their projects.",

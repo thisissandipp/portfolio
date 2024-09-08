@@ -6,6 +6,8 @@ import ArticleCard from "../../components/ArticleCard";
 const capgeminiLink = "https://www.capgemini.com/in-en/";
 const nitDurgapurLink = "https://nitdgp.ac.in/";
 
+const resumeLink = "https://drive.google.com/file/d/1c_H-jsvKMIjLD4zJLVzLO3TI7gXe_aMJ/view?usp=sharing";
+
 export default function Landing(): React.ReactElement {
 	return (
 		<div className="bg-white relative isolate py-24 sm:py-32">
@@ -36,11 +38,15 @@ export default function Landing(): React.ReactElement {
 						collaborating on projects, innovative ideas, and freelancing work.
 					</p>
 					<p className="mt-4 bg-gray-100 p-2.5 rounded-md text-sm text-gray-800">
-						&#8927; My skills, work experience, education can be found in the{" "}
-						<Link className="font-semibold underline underline-offset-4" to="/about">
-							About Me
-						</Link>{" "}
-						section.
+						&#8927; My skills, work experience, education can be found in the Resume.{" "}
+						<Link
+							className="font-semibold underline underline-offset-4"
+							rel="noopener noreferrer"
+							target="_blank"
+							to={resumeLink}
+						>
+							Google Drive Link
+						</Link>
 					</p>
 				</div>
 				<img
