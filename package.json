@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.0.1",
-  "description": "A modern and personal responsive portfolio app built with React and powered by Vite.",
+  "description": "Personal portfolio app built with React and powered by Vite.",
   "type": "module",
   "scripts": {
     "dev": "vite",

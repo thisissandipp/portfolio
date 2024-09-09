@@ -1,3 +1,5 @@
 # Portfolio
 
-A modern and responsive personal portfolio app built with React and powered by Vite.
+Personal Portfolio app built with React and powered by Vite.
+
+Available here - [thecodexhub.dev](thecodexhub.dev)
