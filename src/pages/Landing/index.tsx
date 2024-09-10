@@ -6,7 +6,7 @@ import ArticleCard from "../../components/ArticleCard";
 const capgeminiLink = "https://www.capgemini.com/in-en/";
 const nitDurgapurLink = "https://nitdgp.ac.in/";
 
-const resumeLink = "https://drive.google.com/file/d/1c_H-jsvKMIjLD4zJLVzLO3TI7gXe_aMJ/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/1FlVAHnVFNdDcG7eUl1iSBRSeQgi_E_0p/view?usp=sharing";
 
 export default function Landing(): React.ReactElement {
 	return (
