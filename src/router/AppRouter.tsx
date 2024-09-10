@@ -18,7 +18,7 @@ export default function AppRouter(): React.ReactElement {
 				<Route element={<Blogs />} path="/blogs" />
 				<Route element={<NotFound />} path="*" />
 			</Routes>
-      <Footer />
+			<Footer />
 		</>
 	);
 }

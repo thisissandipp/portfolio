@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --max-warnings 0 --fix",
-    "format": "prettier src/**/*.{ts,tsx} --write",
+    "format": "prettier \"**/*.{ts,tsx}\" --check",
+    "format:write": "prettier \"**/*.{ts,tsx}\" --write",
     "preview": "vite preview"
   },
   "dependencies": {
