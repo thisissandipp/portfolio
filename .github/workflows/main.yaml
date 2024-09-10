@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📚 Git Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 🚀 Setup Node
         uses: actions/setup-node@v4
