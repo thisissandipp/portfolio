@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Personal portfolio app built with React and powered by Vite.",
   "type": "module",
   "scripts": {
