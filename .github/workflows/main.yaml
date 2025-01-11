@@ -58,5 +58,41 @@ jobs:
       - name: ✨ Check Formatting
         run: yarn format
 
-      - name: ⚒️ Build
+      - name: ⚒️ Build Website
         run: yarn build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    steps:
+      - name: 📚 Git Checkout
+        uses: actions/checkout@v4
+
+      - name: 🚀 Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: 👀 Install Yarn
+        run: npm install -g yarn
+
+      - name: 📦 Install Dependencies
+        run: yarn install
+
+      - name: 🎯 Check ESlint
+        run: yarn lint
+
+      - name: ✨ Check Formatting
+        run: yarn format
+
+      - name: ⚒️ Build Website
+        run: yarn build
+
+      - name: ☁️ Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
