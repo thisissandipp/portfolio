@@ -10,7 +10,7 @@ const navigation = [
 	// { name: "Resume", href: "/resume" },
 ];
 
-const portfolioLink = "https://github.com/thecodexhub/portfolio";
+const portfolioLink = "https://github.com/thisissandipp/portfolio";
 
 export default function NavigationBar(): React.ReactElement {
 	const [mobileMainMenuOpen, setMobileMainMenuOpen] = useState(false);
