@@ -6,23 +6,11 @@ concurrency:
 
 on:
   pull_request:
-    paths:
-      - ".github/workflows/main.yaml"
-      - "src/**"
-      - "index.html"
-      - "eslint.config.js"
-      - "prettier.config.js"
-      - "package.json"
+    branches:
+      - main
   push:
     branches:
       - main
-    paths:
-      - ".github/workflows/main.yaml"
-      - "src/**"
-      - "index.html"
-      - "eslint.config.js"
-      - "prettier.config.js"
-      - "package.json"
 
 jobs:
   semantic_pull_request:
