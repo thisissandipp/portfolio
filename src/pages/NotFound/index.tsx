@@ -17,7 +17,7 @@ export default function NotFound(): React.ReactElement {
 						>
 							Go back home
 						</Link>
-						<Link className="text-sm font-semibold leading-6 text-gray-900" to="mailto:thecodexhubofficial@gmail.com">
+						<Link className="text-sm font-semibold leading-6 text-gray-900" to="mailto:thisissandipp@gmail.com">
 							Contact Support <span aria-hidden="true">→</span>
 						</Link>
 					</div>
