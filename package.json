@@ -45,13 +45,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thecodexhub/portfolio.git"
+    "url": "git+https://github.com/thisissandipp/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/thecodexhub/portfolio/issues"
+    "url": "https://github.com/thisissandipp/portfolio/issues"
   },
-  "homepage": "https://github.com/thecodexhub/portfolio#readme",
-  "author": "Sandip Pramanik <thecodexhubofficial@gmail.com>",
+  "homepage": "https://thisissandipp.com",
+  "author": "Sandip Pramanik <thisissandipp@gmail.com>",
   "license": "MIT",
   "private": true
 }

@@ -1,27 +1,25 @@
-name: portfolio
+name: deploy
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:
-  pull_request:
-    branches: ["main"]
   push:
     branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  semantic_pull_request:
-    name: ✅ Semantic Pull Request
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: amannn/action-semantic-pull-request@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  build:
-    name: 🚧 Build
+  deploy:
+    name: 🎉 Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: 📚 Git Checkout
@@ -38,11 +36,17 @@ jobs:
       - name: 📦 Install Dependencies
         run: yarn install
 
-      - name: 🎯 Check ESlint
-        run: yarn lint
-
-      - name: ✨ Check Formatting
-        run: yarn format
-
       - name: ⚒️ Build Website
         run: yarn build
+
+      - name: ⚙️ Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: ☁️ Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./dist"
+
+      - name: 💥 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
