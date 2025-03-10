@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { numberToWords } from "../../helpers/number-to-words";
 
 const today = new Date();
-const dob = new Date("1999-12-23");
+const dob = new Date("1999-11-23");
 
 const differenceInMs = today.getTime() - dob.getTime();
 const millisecondsInDay: number = 24 * 60 * 60 * 1000;
